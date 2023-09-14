@@ -25,12 +25,56 @@
         height: 100vh;
         width: 100vw;
       }
+
+      .demo {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      #time-only::part(palette-pusher),
+      #conditional-subdial::part(palette-pusher),
+      #chronograph::part(palette-pusher) {
+        display: none;
+      }
+
+      #time-only::part(split-seconds-pusher) {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <nedap-backdrop>
-      <nedap-watch>
-      </nedap-watch>
-    </nedap-backdrop>
+    <div class="demo">
+      <nedap-backdrop palette="heritage">
+        <nedap-watch id="time-only" dial-palette="spark"></nedap-watch>
+      </nedap-backdrop>
+      <nedap-backdrop palette="spark">
+        <nedap-watch
+          id="conditional-subdial"
+          split-seconds
+          dial-palette="heritage"
+          subdial-palette="white"
+        ></nedap-watch>
+      </nedap-backdrop>
+      <nedap-backdrop palette="white">
+        <nedap-watch
+          id="chronograph"
+          split-seconds
+          mode="chronograph"
+          dial-palette="scientific"
+          subdial-palette="scientific-highlight"
+        ></nedap-watch>
+      </nedap-backdrop>
+      <nedap-backdrop palette="scientific">
+        <nedap-watch
+          id="puslometer"
+          mode="chronograph"
+          scale="pulsometer"
+          dial-palette="white"
+          subdial-palette="spark-highlight"
+        ></nedap-watch>
+      </nedap-backdrop>
+    </div>
   </body>
 </html>

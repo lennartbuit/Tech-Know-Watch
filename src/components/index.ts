@@ -9,6 +9,7 @@ export * from './dial';
 export * from './hand';
 export * from './markers';
 export * from './numerals';
+export * from './pulsometer-scale';
 export * from './pusher';
 
 /* Watch compositions */
