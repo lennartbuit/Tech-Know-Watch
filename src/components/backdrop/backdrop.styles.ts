@@ -29,7 +29,7 @@ export default [
       background-color: var(--color-palette-background);
     }
 
-    .backdrop::after {
+    .backdrop::before {
       position: absolute;
       content: '';
       background-color: green;
