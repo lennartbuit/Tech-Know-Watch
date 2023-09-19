@@ -12,7 +12,7 @@ export class NedapPusher extends LitElement {
 
   static override styles = styles;
 
-  /** Whether the pusher is enabled */
+  /** Whether the pusher is disabled */
   @property({ type: Boolean }) disabled = false;
 
   override render() {
