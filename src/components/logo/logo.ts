@@ -1,6 +1,7 @@
 import {LitElement} from 'lit';
 import {customElement} from 'lit/decorators.js';
 
+import styles from './logo.styles';
 import svg from './logo.svg';
 
 /**
@@ -12,6 +13,8 @@ import svg from './logo.svg';
 
 @customElement('nedap-logo')
 export class NedapLogo extends LitElement {
+  static override styles = styles;
+
   override render() {
     return svg;
   }
