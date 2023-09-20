@@ -15,10 +15,13 @@ import styles from './markers.styles';
 export class NedapMarkers extends LitElement {
   static override styles = styles;
 
+  /** The size of the marker. */
   @property({type: String, reflect: true}) size: 'small' | 'medium' = 'small';
 
+  /**  The step size between markers shown. */
   @property({type: Number}) step = 5;
 
+  /** The largest value denoted by these markers. */
   @property({type: Number}) max = 60;
 
   override render() {

@@ -7,13 +7,13 @@ import type {Palette} from '../../styles';
 /**
  * @summary Backdrops show a Nedap-style two-toned background.
  *
- * @slot - Content
+ * @slot - Content.
  */
 @customElement('nedap-backdrop')
 export class NedapBackdrop extends LitElement {
   static override styles = styles;
 
-  /** The palette for this backdrop */
+  /** The palette for this backdrop. */
   @property({type: String, reflect: true}) palette: Palette = 'heritage';
 
   override render() {

@@ -6,7 +6,7 @@ import {styleMap} from 'lit/directives/style-map.js';
 import styles from './hand.styles';
 
 /**
- * @summary A hand shows a value on a radial scale
+ * @summary A hand shows a value on a radial scale.
  *
  * @cssproperty --hand-color - The hand's color.
  */
@@ -14,7 +14,7 @@ import styles from './hand.styles';
 export class NedapHand extends LitElement {
   static override styles = styles;
 
-  /** The style of the hand */
+  /** The style of the hand. */
   @property({type: String}) variant: 'seconds' | 'minutes' | 'hours' =
     'seconds';
 

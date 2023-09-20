@@ -5,10 +5,10 @@ import styles from './logo.styles';
 import svg from './logo.svg';
 
 /**
- * @summary Logo render the nedap logo
+ * @summary Logo render the Nedap logo.
  *
- * @cssproperty --logo-color-spark - The spark's color
- * @cssproperty ----logo-color-text - The lettering's color
+ * @cssproperty --logo-color-spark - The spark's color.
+ * @cssproperty --logo-color-text - The lettering's color.
  */
 
 @customElement('nedap-logo')

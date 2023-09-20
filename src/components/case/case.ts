@@ -4,13 +4,14 @@ import {customElement} from 'lit/decorators.js';
 import styles from './case.styles';
 
 /**
- * @summary Cases wrap around dials
+ * @summary Cases wrap around dials.
  *
- * @slot - Dial
- * @slot 2-o-clock - Pusher at the 2 o'clock position
- * @slot 4-o-clock - Pusher at the 4 o'clock position
- * @slot 8-o-clock - Pusher at the 8 o'clock position
- * @slot 10-o-clock - Pusher at the 10 o'clock position
+ * @slot - Dial.
+ * @slot 2-o-clock - Pusher at the 2 o'clock position.
+ * @slot 4-o-clock - Pusher at the 4 o'clock position.
+ * @slot 8-o-clock - Pusher at the 8 o'clock position.
+ * @slot 10-o-clock - Pusher at the 10 o'clock position.
+ * @slot bezel - Scale printed on the bezel.
  */
 @customElement('nedap-case')
 export class NedapCase extends LitElement {

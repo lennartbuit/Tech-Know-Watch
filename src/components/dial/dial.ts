@@ -5,14 +5,15 @@ import styles from './dial.styles';
 import type {Palette} from '../../styles';
 
 /**
- * @summary Dials show values by rotating hands around its center axis
+ * @summary Dials show values by rotating hands around its center axis.
  *
- * @slot - The dials hands
- * @slot markers - Markers on the dial
- * @slot numerals - Numerals on the dial
- * @slot 3-o-clock - Subdial at the 3 o'clock position
- * @slot 6-o-clock - Subdial at the 6 o'clock position
- * @slot 9-o-clock - Subdial at the 9 o'clock position
+ * @slot - The dials hands.
+ * @slot markers - Markers on the dial.
+ * @slot numerals - Numerals on the dial.
+ * @slot 3-o-clock - Subdial at the 3 o'clock position.
+ * @slot 6-o-clock - Subdial at the 6 o'clock position.
+ * @slot 9-o-clock - Subdial at the 9 o'clock position.
+ * @slot 12-o-clock - Subdial at the 12 o'clock position.
  *
  * @cssproperty --dial-color - The dial's color.
  */
@@ -20,7 +21,7 @@ import type {Palette} from '../../styles';
 export class NedapDial extends LitElement {
   static override styles = styles;
 
-  /** The palette used for this dial */
+  /** The palette used for this dial. */
   @property({type: String, reflect: true}) palette: Palette | null = null;
 
   override render() {

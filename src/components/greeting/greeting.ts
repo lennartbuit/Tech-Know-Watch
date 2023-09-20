@@ -4,13 +4,13 @@ import {customElement} from 'lit/decorators.js';
 import styles from './greeting.styles';
 
 /**
- * @summary Greetings welcome you to the world of webcomponents
+ * @summary Greetings welcome you to the world of webcomponents.
  *
- * @slot title - The title of the greeting
- * @slot - The body of the greeting
+ * @slot title - The title of the greeting.
+ * @slot body - The body of the greeting.
  *
- * @cssproperty --greeting-title-color - The title's text color
- * @cssproperty --greeting-body-color - The body's text color
+ * @cssproperty --greeting-title-color - The title's text color.
+ * @cssproperty --greeting-body-color - The body's text color.
  */
 @customElement('nedap-greeting')
 export class NedapGreeting extends LitElement {
