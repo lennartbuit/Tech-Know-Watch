@@ -32,7 +32,7 @@ yarn run build:watch
 
 ## Dev Server
 
-While building takes care of converting TypeScript to JavaScript, the Dev Server will statically serve `index.html` as a playground for your component.To run the dev server:
+While building takes care of converting TypeScript to JavaScript, the Dev Server will statically serve `index.html` as a playground for your component. To run the dev server:
 
 ```bash
 yarn run serve
@@ -44,4 +44,4 @@ The repo was tested in the latest version of the three largest browsers: Safari,
 
 ## Editing
 
-We strongly advice you to use VS Code, there is also a lit plugin that will be suggested once you open this workspace in VS Code.
+We strongly advise you to use VS Code, there is also a lit plugin that will be suggested once you open this workspace in VS Code.
