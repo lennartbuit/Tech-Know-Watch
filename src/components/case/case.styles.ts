@@ -24,23 +24,37 @@ export default [
       height: 10%;
       left: calc(50% + calc(cos(var(--pusher-rotation)) * 50%));
       top: calc(50% - calc(sin(var(--pusher-rotation)) * 50%));
-      transform: translate(-50%, -50%) rotate(calc(0deg - var(--pusher-rotation)));
+      transform: translate(-50%, -50%)
+        rotate(calc(0deg - var(--pusher-rotation)));
     }
 
-    ::slotted(nedap-pusher[slot="2-o-clock"]) {
+    ::slotted(nedap-pusher[slot='2-o-clock']) {
       --pusher-rotation: 30deg;
     }
 
-    ::slotted(nedap-pusher[slot="4-o-clock"]) {
+    ::slotted(nedap-pusher[slot='4-o-clock']) {
       --pusher-rotation: -30deg;
     }
 
-    ::slotted(nedap-pusher[slot="8-o-clock"]) {
+    ::slotted(nedap-pusher[slot='8-o-clock']) {
       --pusher-rotation: -150deg;
     }
 
-    ::slotted(nedap-pusher[slot="10-o-clock"]) {
+    ::slotted(nedap-pusher[slot='10-o-clock']) {
       --pusher-rotation: 150deg;
+    }
+
+    ::slotted([slot='bezel']) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+
+      font-size: 20%;
+
+      font-family: var(--font-family-ibm-plex-sans);
+      font-weight: normal;
+      --numerals-color: var(--color-heritage-blue);
     }
 
     .case {
@@ -50,7 +64,7 @@ export default [
     }
 
     .case__outer-rim,
-    .case__track,
+    .case__bezel,
     .case__inner-rim,
     .case__dial-surface,
     .case__shadow,
@@ -69,9 +83,11 @@ export default [
         var(--color-silver),
         var(--color-white)
       );
+      pointer-events: none;
     }
 
-    .case__track {
+    .case__bezel {
+      position: relative;
       padding: 5%;
       background: conic-gradient(
         from -45deg,
@@ -93,7 +109,6 @@ export default [
     }
 
     .case__dial-surface {
-      pointer-events: none;
       background-color: var(--color-silver-light);
       position: relative;
     }
@@ -102,13 +117,22 @@ export default [
       position: absolute;
       inset: 0;
       z-index: 3;
-      background: radial-gradient(closest-side at 50.5% 50.5%, transparent 100%, var(--color-shadow) 102%);
+      background: radial-gradient(
+        closest-side at 50.5% 50.5%,
+        transparent 100%,
+        var(--color-shadow) 102%
+      );
     }
 
     .case__glass {
       position: absolute;
       inset: 0;
-      background: linear-gradient(-75deg, transparent 50%, rgba(255, 255, 255, 0.10) 50%, rgba(255, 255, 255, 0.25));
+      background: linear-gradient(
+        -75deg,
+        transparent 50%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.25)
+      );
     }
   `,
 ];

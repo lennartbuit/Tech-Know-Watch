@@ -24,7 +24,8 @@ export class NedapCase extends LitElement {
         <slot name="8-o-clock"></slot>
         <slot name="10-o-clock"></slot>
         <div class="case__outer-rim">
-          <div class="case__track">
+          <div class="case__bezel">
+            <slot name="bezel"></slot>
             <div class="case__inner-rim">
               <div class="case__dial-surface">
                 <slot></slot>
