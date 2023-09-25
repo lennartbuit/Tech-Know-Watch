@@ -76,7 +76,7 @@ export default [
 
     .case__outer-rim {
       position: relative;
-      padding: 2px;
+      padding: 0.125rem;
       background: conic-gradient(
         from -45deg,
         var(--color-white),
@@ -98,7 +98,7 @@ export default [
     }
 
     .case__inner-rim {
-      padding: 2px;
+      padding: 0.125rem;
 
       background: conic-gradient(
         from 135deg,

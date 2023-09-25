@@ -31,7 +31,7 @@ export default [
     }
 
     .pusher:focus-visible::before {
-      box-shadow: 0 0 4px 4px var(--color-scientific-blue);
+      box-shadow: 0 0 0.25rem 0.25rem var(--color-scientific-blue);
     }
 
     .pusher:not(:disabled):hover::before {

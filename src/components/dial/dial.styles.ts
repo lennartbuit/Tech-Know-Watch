@@ -81,8 +81,8 @@ export default [
     }
 
     .stem {
-      width: max(2.5%, 6px);
-      height: max(2.5%, 6px);
+      width: max(2.5%, 0.375rem);
+      height: max(2.5%, 0.375rem);
       background-color: var(--color-silver-light);
       position: absolute;
       transform-origin: bottom center;

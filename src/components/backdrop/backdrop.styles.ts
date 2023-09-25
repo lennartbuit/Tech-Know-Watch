@@ -1,6 +1,6 @@
 import {css} from 'lit';
 
-import { palette, reset } from '../../styles';
+import {palette, reset} from '../../styles';
 
 export default [
   reset,
@@ -39,7 +39,7 @@ export default [
       height: 200%;
       left: -40%;
       bottom: 0;
-      border-radius: 100px;
+      border-radius: 6.5rem;
       background-color: var(--color-palette-foreground);
     }
   `,

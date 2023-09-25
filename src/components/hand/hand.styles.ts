@@ -16,7 +16,7 @@ export default [
       height: 100%;
       width: 100%;
       transform: rotate(var(--rotation, 0deg));
-      filter: drop-shadow(0 0 4px var(--color-shadow));
+      filter: drop-shadow(0 0 0.25rem var(--color-shadow));
     }
 
     .hand__bar {
@@ -24,7 +24,7 @@ export default [
       transform: translateX(-50%);
       top: 5%;
       left: 50%;
-      width: 4px;
+      width: 0.25rem;
       border-radius: var(--border-radius-full);
     }
 
@@ -43,7 +43,7 @@ export default [
     .hand--seconds .hand__bar {
       top: 2.5%;
       height: 55%;
-      width: max(1%, 4px);
+      width: max(1%, 0.25rem);
       width: calc(1% * var(--dial-scale-factor, 1));
       background-color: var(--hand-color, var(--color-palette-highlight));
     }
