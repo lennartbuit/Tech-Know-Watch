@@ -8,17 +8,18 @@ import styles from './pusher.styles';
  */
 @customElement('nedap-pusher')
 export class NedapPusher extends LitElement {
-  static override shadowRootOptions: ShadowRootInit = { ...LitElement.shadowRootOptions, delegatesFocus: true };
+  static override shadowRootOptions: ShadowRootInit = {
+    ...LitElement.shadowRootOptions,
+    delegatesFocus: true,
+  };
 
   static override styles = styles;
 
   /** Whether the pusher is disabled. */
-  @property({ type: Boolean }) disabled = false;
+  @property({type: Boolean}) disabled = false;
 
   override render() {
-    return html`
-      <button class="pusher" ?disabled=${this.disabled}></button>
-    `;
+    return html` <button class="pusher" ?disabled=${this.disabled}></button> `;
   }
 }
 

@@ -34,8 +34,7 @@ export class NedapMarkers extends LitElement {
             <div
               class="markers__index"
               style=${styleMap({'--degrees': degrees})}
-            >
-            </div>
+            ></div>
           `;
         })}
       </div>

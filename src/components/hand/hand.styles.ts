@@ -1,6 +1,6 @@
 import {css} from 'lit';
 
-import { reset } from '../../styles';
+import {reset} from '../../styles';
 
 export default [
   reset,

@@ -1,18 +1,18 @@
 import {css} from 'lit';
 
-import { reset } from '../../styles';
+import {reset} from '../../styles';
 
 export default [
   reset,
   css`
-    :host([size="small"]) {
+    :host([size='small']) {
       --marker-width: calc(2.5% * var(--dial-scale-factor, 1));
       --marker-height: calc(0.5% * var(--dial-scale-factor, 1));
 
       --marker-color: var(--color-palette-text);
     }
 
-    :host([size="medium"]) {
+    :host([size='medium']) {
       --marker-width: calc(5% * var(--dial-scale-factor, 1));
       --marker-height: calc(1% * var(--dial-scale-factor, 1));
 
