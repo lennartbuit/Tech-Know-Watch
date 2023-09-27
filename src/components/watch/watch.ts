@@ -78,10 +78,13 @@ import {customElement} from 'lit/decorators.js';
  * 5. Build an additional complication.
  *
  * You completed the workshop 🎉. If you got all inspired, there are plenty of
- * complications you can still add. For example, add a pulsimeter track on the
- * cases bezel to quickly determine heartbeat by measuring elapsed time of 15
- * or 30 beats. Or, add a pusher at the 8 o'clock position to change the palette
- * used by the watch.
+ * complications you can still add. For example:
+ *
+ *   1. Add a pulsometer track on the cases bezel to quickly determine
+ *      heartbeat by measuring elapsed time of 15 or 30 beats.
+ *   2. Add a pusher at the 8 o'clock position to change the palette used by
+ *      the watch. You can also emit an event when a watch swaps its palette
+ *      so that backdrop does the same!
  *
  * Useful resources:
  *   1. List of complications - https://teddybaldassarre.com/blogs/watches/watch-complications
