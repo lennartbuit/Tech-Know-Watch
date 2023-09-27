@@ -6,7 +6,7 @@ import {customElement} from 'lit/decorators.js';
  *
  * 1. Orient yourself around this repository.
  *
- * There are 8 components for watch building:
+ * There are 7 components for watch building:
  *    1. Case
  *    2. Dial
  *    3. Hand
@@ -22,10 +22,11 @@ import {customElement} from 'lit/decorators.js';
  * Each of these components has its own folder and come with documentation
  * about its slots, attributes and css properties in its main TypeScript file.
  *
- * The backdrop and dial components also accept a `palette` attribute that can
- * be used to their color scheme.
+ * The backdrop and dial components also accept a `palette` attribute that
+ * change their color scheme.
  *
- * The possible palettes are documented in `styles/palette.ts`.
+ * Useful resources:
+ *   1. Possible palettes - `styles/palette.ts`.
  *
  *
  * ----------------------------------------------------------------------------
@@ -46,7 +47,7 @@ import {customElement} from 'lit/decorators.js';
  * 3. Create a watch that can show seconds in a subdial.
  *
  * Extend your watch to show running seconds in a subdial at the 6 o'clock
- * position. Also add a pusher at the 4 o'clock position that toggles between
+ * position. Also add a pusher at the 10 o'clock position that toggles between
  * showing the running seconds with the main hand / in a subdial.
  *
  * Useful resources:
@@ -62,7 +63,7 @@ import {customElement} from 'lit/decorators.js';
  * Use the:
  *   1. Main second hand for the running seconds of the chronograph function.
  *   2. Subdial at 9 o'clock for the running seconds of the time function.
- *   3. Subdial at 3 o'clock for 1-30 minutes of the chronograph function.
+ *   3. Subdial at 3 o'clock for 0-30 minutes of the chronograph function.
  *   4. Subdial at 9 o'clock for 0-12 hours of the chronograph function.
  *   5. Pusher at 2 o'clock for starting and pausing the chronograph function.
  *   6. Pusher at 4 o'clock for resetting the chronograph function.
@@ -76,11 +77,12 @@ import {customElement} from 'lit/decorators.js';
  * 5. Build an additional complication.
  *
  * You completed the workshop 🎉. If you got all inspired, there are plenty of
- * compilcations you can still add. For example a pulsimeter track on the case
- * can be used to quickly calculate someones heartbeat by measuring the
- * elapsed time of 15 or 30 beats.
+ * complications you can still add. For example, add a pulsimeter track on the
+ * cases bezel to quickly measure heartbeat by measuring elapsed time of 15
+ * or 30 beats. Or, add a pusher at the 8 o'clock position to change the palette
+ * used by the watch.
  *
- * Useful resources;
+ * Useful resources:
  *   1. List of complications - https://teddybaldassarre.com/blogs/watches/watch-complications
  */
 
@@ -91,7 +93,7 @@ export class NedapWatch extends LitElement {
       <nedap-case>
         <!-- TODO: Implementation is missing :( -->
       </nedap-case>
-    `
+    `;
   }
 }
 
