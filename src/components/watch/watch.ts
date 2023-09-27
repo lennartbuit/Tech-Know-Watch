@@ -34,7 +34,7 @@ import {customElement} from 'lit/decorators.js';
  * 2. Create a time-only watch.
  *
  * Show the time with three hands on the main dial. Note that mechanical
- * watches show time in "sweeping" fashion, so the seconds hand glides across
+ * watches show time in sweeping fashion, so the seconds hand glides across
  * the dial, and the minute/hour hands also rotate continually.
  *
  * Useful resources:
@@ -48,7 +48,8 @@ import {customElement} from 'lit/decorators.js';
  *
  * Extend your watch to show running seconds in a subdial at the 6 o'clock
  * position. Also add a pusher at the 10 o'clock position that toggles between
- * showing the running seconds with the main hand / in a subdial.
+ * showing the running seconds with the main hand or showing running seconds
+ * in a subdial.
  *
  * Useful resources:
  *  1. Lit `when` directive -  https://lit.dev/docs/templates/directives/#when
@@ -78,7 +79,7 @@ import {customElement} from 'lit/decorators.js';
  *
  * You completed the workshop 🎉. If you got all inspired, there are plenty of
  * complications you can still add. For example, add a pulsimeter track on the
- * cases bezel to quickly measure heartbeat by measuring elapsed time of 15
+ * cases bezel to quickly determine heartbeat by measuring elapsed time of 15
  * or 30 beats. Or, add a pusher at the 8 o'clock position to change the palette
  * used by the watch.
  *
