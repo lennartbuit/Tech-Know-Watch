@@ -40,9 +40,10 @@ import {customElement} from 'lit/decorators.js';
  * Useful resources:
  *   1. `setInterval` - https://developer.mozilla.org/en-US/docs/Web/API/setInterval
  *   2. `requestAnimationFrame` - https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
- *   3. `this` binding - note that passing function references into
- *      `setInterval`/`requestAnimationFrame` might have `undefined for `this`
- *      consider `bind` or use arrow functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+ *   3. `this` binding - note a function references passed into
+ *      `setInterval`/`requestAnimationFrame` might be called with `this`
+ *      bound to `undefined`. Consider `bind` or use arrow functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+ *
  *
  * ----------------------------------------------------------------------------
  *
