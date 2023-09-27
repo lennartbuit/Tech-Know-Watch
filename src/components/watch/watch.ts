@@ -44,7 +44,7 @@ import {customElement} from 'lit/decorators.js';
  *
  * ----------------------------------------------------------------------------
  *
- * 3. Create a watch that can show seconds in a subdial.
+ * 3. Create a watch that conditionally shows seconds in a subdial.
  *
  * Extend your watch to show running seconds in a subdial at the 6 o'clock
  * position. Also add a pusher at the 10 o'clock position that toggles between
@@ -56,7 +56,7 @@ import {customElement} from 'lit/decorators.js';
  *
  * ----------------------------------------------------------------------------
  *
- * 4. Create a watch that has a chronograph as secondary function.
+ * 4. Create a watch with a chronograph as secondary function.
  *
  * Your watch should be extended so that it can measure elapsed time.
  *
