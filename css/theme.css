@@ -1,0 +1,49 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-shadow: rgba(0, 28, 62, 0.24);
+
+  --color-people-yellow: #FDC32D;
+  --color-people-muted: #FBB01F;
+  --color-people-light: #FEDEAF;
+  --color-people-highlight: #FFF0DB;
+
+  --color-spark-orange: #FF6C37;
+  --color-spark-muted: #E86435;
+  --color-spark-light: #FEC7B0;
+  --color-spark-highlight: #FFEAE2;
+
+  --color-artful-red: #CE0F3D;
+  --color-artful-muted: #B31C38;
+  --color-artful-light: #FA9AB0;
+  --color-artful-highlight: #FFD2DD;
+
+  --color-elegance-purple: #713377;
+  --color-elegance-muted: #5C2461;
+  --color-elegance-light: #D298D7;
+  --color-elegance-highlight: #F3CAF8;
+
+  --color-intuitive-green: #006853;
+  --color-intuitive-muted: #0D5748;
+  --color-intuitive-light: #BBDFB2;
+  --color-intuitive-highlight: #D7F2DD;
+
+  --color-scientific-blue: #54A7D9;
+  --color-scientific-muted: #2994C9;
+  --color-scientific-light: #BBDFF3;
+  --color-scientific-highlight: #E7F6FC;
+
+  --color-heritage-blue: #023A4F;
+  --color-heritage-muted: #022E3F;
+  --color-heritage-light: #CED5DD;
+  --color-heritage-highlight: #F4F4F4;
+
+  --color-silver-light: #D1DFEB;
+  --color-silver: #A9B2C7;
+
+  --border-radius-full: 999rem;
+
+  --font-family-objectivity: Objectivity, IBM Plex Sans, Helvetica Neue, Arial, sans-serif;
+  --font-family-ibm-plex-sans: IBM Plex Sans, Helvetica Neue, Arial, sans-serif;
+  --font-family-ibm-plex-serif: IBM Plex Serif, Georgia, Times, serif;
+  --font-family-ibm-plex-mono: IBM Plex Mono, Droid Sans Mono, Menlo, Courier, monospace;
+}
